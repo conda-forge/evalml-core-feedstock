@@ -9,7 +9,7 @@ source:
   sha256: 1c4c440e9370f49ad21100908285a23e7c38fbc872feba34c0e6c47c39db8f76
 
 build:
-  number: 0
+  number: 1
 
 outputs:
   - name: evalml-core
@@ -25,7 +25,7 @@ outputs:
       run:
         - numpy >=1.16.4
         - pandas >=0.25.0
-        - scipy >=1.2.1,<1.5.0
+        - scipy >=1.2.1
         - scikit-learn >=0.21.3,!=0.22,<0.23.0
         - scikit-optimize
         - tqdm >=4.33.0
@@ -45,12 +45,14 @@ outputs:
         - nbval ==0.9.3
         - python-graphviz >=0.8.4
         - category_encoders >=2.0.0
+        - featuretools
+        - nlp-primitives >=1.0.0
       source_files:
         - evalml/*
         - requirements.txt
         - core-requirements.txt
       commands:
-        - pytest evalml/tests --has-minimal-dependencies --deselect evalml/tests/component_tests/test_utils.py::test_all_components
+        - pytest evalml/tests --has-minimal-dependencies
 
   - name: evalml
     build:
@@ -71,12 +73,14 @@ outputs:
         - nbval ==0.9.3
         - python-graphviz >=0.8.4
         - category_encoders >=2.0.0
+        - featuretools
+        - nlp-primitives >=1.0.0
       source_files:
         - evalml/*
         - requirements.txt
         - core-requirements.txt
       commands:
-        - pytest evalml/tests --deselect evalml/tests/component_tests/test_utils.py::test_all_components
+        - pytest evalml/tests
 
 about:
   doc_url: https://evalml.featurelabs.com/en/stable/

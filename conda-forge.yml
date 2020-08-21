@@ -1,1 +1,6 @@
 conda_forge_output_validation: true
+provider:
+  linux: default
+  linux_aarch64: default
+  osx: default
+  win: default
