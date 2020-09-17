@@ -1,12 +1,12 @@
-{% set version = "0.13.1" %}
+{% set version = "0.13.dev1" %}
 
 package:
   name: evalml-core
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/e/evalml/evalml-{{ version }}.tar.gz
-  sha256: bb555d790675535345d733d1b10e2f2dc3b1decfd92ad42583a316e5fa5f012f
+  url: https://test-files.pythonhosted.org/packages/99/2d/a2531eb2d7ad9b7adc62930905ddc074e7021acc4e90b59b8b05b387de14/evalml-0.13.dev1.tar.gz
+  sha256: e90d44fdb34bfe3c50548d36ce0dc7021551d8066dce3551994bb0fe06909d10
 
 build:
   number: 0
@@ -27,8 +27,7 @@ outputs:
         - pandas >=0.25.0
         - scipy >=1.2.1
         - scikit-learn >=0.21.3,!=0.22,<0.23.0
-        - scikit-optimize
-        - tqdm >=4.33.0
+        - scikit-optimize >=0.7,<=0.7.4
         - colorama
         - cloudpickle >=0.2.2
         - click >=7.0.0
@@ -64,6 +63,7 @@ outputs:
         - ipywidgets >=7.5
         - py-xgboost >=0.82
         - catboost >=0.20
+        - lightgbm >=2.3.1
         - python >=3.6.*
     test:
       imports:
