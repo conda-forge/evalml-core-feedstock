@@ -1,15 +1,15 @@
-{% set version = "0.13.2" %}
+{% set version = "0.14.dev0" %}
 
 package:
   name: evalml-core
   version: '{{ version }}'
 
 source:
-  url: https://pypi.io/packages/source/e/evalml/evalml-{{ version }}.tar.gz
-  sha256: 32bd9396a12d0c87a16c7209f9eeb28b6daee9c2943d5099699add0c6ada806b
+  url: https://test-files.pythonhosted.org/packages/74/ba/ee293ed0fe8fbab7f835e0246095da480237de4181f61f18625a702412ae/evalml-0.14.dev0.tar.gz
+  sha256: 15fd637d1177da50d434aa71a092e093e3723790406aff12dbf0f86bb333facc
 
 build:
-  number: 1
+  number: 0
 
 outputs:
   - name: evalml-core
@@ -26,8 +26,8 @@ outputs:
         - numpy >=1.16.4
         - pandas >=0.25.0
         - scipy >=1.2.1
-        - scikit-learn >=0.21.3,!=0.22,<0.23.0
-        - scikit-optimize >=0.7,<=0.7.4
+        - scikit-learn >=0.23
+        - scikit-optimize >=0.8
         - colorama
         - cloudpickle >=0.2.2
         - click >=7.0.0
