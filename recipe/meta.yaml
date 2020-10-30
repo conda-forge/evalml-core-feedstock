@@ -2,7 +2,7 @@
 
 package:
   name: evalml-core
-  version: {{ version }}
+  version: '{{ version }}'
 
 source:
   url: https://pypi.io/packages/source/e/evalml/evalml-{{ version }}.tar.gz
@@ -36,6 +36,8 @@ outputs:
         - shap >=0.35.0
         - texttable >=1.6.2
         - woodwork >=0.0.3
+        - featuretools>=0.20.0
+        - nlp-primitives>=1.1.0
         - python >=3.6.*
     test:
       imports:
@@ -45,8 +47,6 @@ outputs:
         - nbval ==0.9.3
         - python-graphviz >=0.8.4
         - category_encoders >=2.0.0
-        - featuretools
-        - nlp-primitives >=1.0.0
       source_files:
         - evalml/*
         - requirements.txt
@@ -59,7 +59,7 @@ outputs:
       noarch: python
     requirements:
       run:
-        - {{ pin_subpackage("evalml-core", max_pin="x.x.x.x") }}
+        - '{{ pin_subpackage("evalml-core", max_pin="x.x.x.x") }}'
         - plotly >=4.2.1
         - ipywidgets >=7.5
         - py-xgboost >=0.82
@@ -74,8 +74,6 @@ outputs:
         - nbval ==0.9.3
         - python-graphviz >=0.8.4
         - category_encoders >=2.0.0
-        - featuretools
-        - nlp-primitives >=1.0.0
       source_files:
         - evalml/*
         - requirements.txt
