@@ -85,7 +85,7 @@ outputs:
 
 about:
   doc_url: https://evalml.featurelabs.com/en/stable/
-  dev_url: https://github.com/Featuretools/featuretools/
+  dev_url: https://github.com/alteryx/evalml/
   home: https://www.alteryx.com/innovation-labs
   license: BSD-3-Clause
   license_family: BSD
