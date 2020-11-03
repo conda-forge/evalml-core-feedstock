@@ -84,7 +84,7 @@ outputs:
         - pytest evalml/tests
 
 about:
-  doc_url: https://evalml.featurelabs.com/en/stable/
+  doc_url: https://evalml.featurelabs.com/
   dev_url: https://github.com/alteryx/evalml/
   home: https://www.alteryx.com/innovation-labs
   license: BSD-3-Clause
