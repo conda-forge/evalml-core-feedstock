@@ -9,7 +9,7 @@ source:
   sha256: 1bb450c821e6ac1a07657f052ff4b16fa88062336cc8d74e31526a49acdaa80e
 
 build:
-  number: 0
+  number: 1
 
 outputs:
   - name: evalml-core
@@ -82,8 +82,8 @@ outputs:
         - pytest evalml/tests
 
 about:
-  doc_url: https://evalml.featurelabs.com/en/stable/
-  dev_url: https://github.com/Featuretools/featuretools/
+  doc_url: https://evalml.featurelabs.com/
+  dev_url: https://github.com/alteryx/evalml/
   home: https://www.alteryx.com/innovation-labs
   license: BSD-3-Clause
   license_family: BSD

@@ -9,9 +9,9 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/evalml-core-fee
 
 Summary: EvalML is an AutoML library that builds, optimizes, and evaluates machine learning pipelines using domain-specific objective functions.
 
-Development: https://github.com/Featuretools/featuretools/
+Development: https://github.com/alteryx/evalml/
 
-Documentation: https://evalml.featurelabs.com/en/stable/
+Documentation: https://evalml.featurelabs.com/
 
 Current build status
 ====================
