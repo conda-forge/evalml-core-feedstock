@@ -9,7 +9,7 @@ source:
   sha256: 103b4e345d8cddbb5bb90940216d983a086a668546634d06658addcfdbd9a192
 
 build:
-  number: 0
+  number: 2
 
 outputs:
   - name: evalml-core
@@ -35,7 +35,7 @@ outputs:
         - requirements-parser >=0.2.0
         - shap >=0.35.0
         - texttable >=1.6.2
-        - woodwork ==0.0.6
+        - woodwork ==0.0.7
         - featuretools>=0.20.0
         - nlp-primitives>=1.1.0
         - python >=3.6.*
@@ -60,7 +60,8 @@ outputs:
     requirements:
       run:
         - '{{ pin_subpackage("evalml-core", max_pin="x.x.x.x") }}'
-        - plotly >=4.2.1
+        - plotly >=4.14.1
+        - kaleido >=0.1.0
         - ipywidgets >=7.5
         - py-xgboost >=0.82
         - catboost >=0.20
