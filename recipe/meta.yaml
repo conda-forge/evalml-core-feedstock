@@ -60,8 +60,8 @@ outputs:
     requirements:
       run:
         - '{{ pin_subpackage("evalml-core", max_pin="x.x.x.x") }}'
-        - plotly >=4.14.1
-        - python-kaleido >=0.1.0
+        - plotly >=4.2.1
+        - python-kaleido ==0.1.0
         - ipywidgets >=7.5
         - py-xgboost >=0.82
         - catboost >=0.20
