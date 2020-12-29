@@ -9,7 +9,7 @@ source:
   sha256: 103b4e345d8cddbb5bb90940216d983a086a668546634d06658addcfdbd9a192
 
 build:
-  number: 4
+  number: 6
 
 outputs:
   - name: evalml-core
@@ -45,7 +45,7 @@ outputs:
       requires:
         - pytest >= 4.4.*
         - nbval ==0.9.3
-        - python-graphviz >=0.8.4,<0.16
+        - python-graphviz >=0.8.4
         - category_encoders >=2.0.0
       source_files:
         - evalml/*
@@ -97,3 +97,4 @@ extra:
   recipe-maintainers:
     - dsherry
     - freddyaboulton
+    - ParthivNaresh
