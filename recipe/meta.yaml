@@ -24,7 +24,7 @@ outputs:
         - pip
       run:
         - numpy >=1.16.4
-        - pandas >=0.25.0
+        - pandas >=0.25.0,<1.2.0
         - scipy >=1.2.1
         - scikit-learn >=0.23.1,<0.24.0
         - scikit-optimize >=0.8
@@ -45,7 +45,7 @@ outputs:
       requires:
         - pytest >= 4.4.*
         - nbval ==0.9.3
-        - python-graphviz >=0.8.4
+        - python-graphviz >=0.8.4,<0.16
         - category_encoders >=2.0.0
       source_files:
         - evalml/*
