@@ -45,7 +45,7 @@ outputs:
       requires:
         - pytest >= 4.4.*
         - nbval ==0.9.3
-        - python-graphviz >=0.8.4,<=0.15
+        - python-graphviz ==0.15
         - category_encoders >=2.0.0
       source_files:
         - evalml/*
@@ -75,7 +75,7 @@ outputs:
       requires:
         - pytest ==4.4.1
         - nbval ==0.9.3
-        - python-graphviz >=0.8.4,<=0.15
+        - python-graphviz >=0.8.4
         - category_encoders >=2.0.0
       source_files:
         - evalml/*
