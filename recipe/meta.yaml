@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/e/evalml/evalml-{{ version }}.tar.gz
-  sha256: 1ed46fbfd9510ebf343291fbca57330a597ab27a11c52ffa4976ea7b5112e3bd	
+  sha256: 1ed46fbfd9510ebf343291fbca57330a597ab27a11c52ffa4976ea7b5112e3bd
 
 build:
   number: 0
