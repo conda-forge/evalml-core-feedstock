@@ -9,7 +9,7 @@ source:
   sha256: 1ed46fbfd9510ebf343291fbca57330a597ab27a11c52ffa4976ea7b5112e3bd
 
 build:
-  number: 1
+  number: 2
 
 outputs:
   - name: evalml-core
@@ -39,6 +39,7 @@ outputs:
         - featuretools>=0.20.0
         - nlp-primitives>=1.1.0
         - python >=3.6.*
+        - pytest-xdist
     test:
       imports:
         - evalml
@@ -52,7 +53,7 @@ outputs:
         - requirements.txt
         - core-requirements.txt
       commands:
-        - pytest evalml/tests --has-minimal-dependencies
+        - pytest evalml/tests -n 8 --has-minimal-dependencies
 
   - name: evalml
     build:
@@ -82,7 +83,7 @@ outputs:
         - requirements.txt
         - core-requirements.txt
       commands:
-        - pytest evalml/tests
+        - pytest evalml/tests -n 8
 
 about:
   doc_url: https://evalml.featurelabs.com/
