@@ -70,6 +70,7 @@ outputs:
         - catboost >=0.20
         - lightgbm >=2.3.1
         - imbalanced-learn >=0.7.0
+        - sktime >=0.5.3
         - python >=3.7.*
     test:
       imports:
