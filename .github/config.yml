@@ -10,7 +10,7 @@ jobs:
     machine: true
     steps:
       - run:
-          # The Circle-CI build should not be active, but if this is not true for some reason, do a fast finish.
+          # The GitHub Actions build should not be active, but if this is not true for some reason, do a fast finish.
           command: exit 0
 
 workflows:
