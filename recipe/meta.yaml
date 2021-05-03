@@ -9,7 +9,7 @@ source:
   sha256: f63442e75e060a7cb373a3483ce2dfb2ec15b3c92623cf95d473111b4a002e5e
 
 build:
-  number: 1
+  number: 0
 
 outputs:
   - name: evalml-core
@@ -39,7 +39,6 @@ outputs:
         - featuretools>=0.20.0
         - nlp-primitives>=1.1.0
         - python >=3.7.*
-        - networkx >=2.5
         - pytest-xdist
     test:
       imports:
@@ -71,7 +70,9 @@ outputs:
         - catboost >=0.20
         - lightgbm >=2.3.1
         - python >=3.7.*
+        - statsmodels >=0.12.2
         - imbalanced-learn >=0.7.0
+        - sktime >=0.5.3
     test:
       imports:
         - evalml
