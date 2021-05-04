@@ -9,7 +9,7 @@ source:
   sha256: f63442e75e060a7cb373a3483ce2dfb2ec15b3c92623cf95d473111b4a002e5e
 
 build:
-  number: 2
+  number: 1
 
 outputs:
   - name: evalml-core
@@ -73,7 +73,6 @@ outputs:
         - python >=3.7.*
         - statsmodels >=0.12.2
         - imbalanced-learn >=0.7.0
-        - pmdarima ==1.8.2
         - sktime >=0.5.3
     test:
       imports:
