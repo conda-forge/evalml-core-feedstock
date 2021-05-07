@@ -9,7 +9,7 @@ source:
   sha256: 67312e04a62463ea7897ea91b624ed1819c03d7c7bcbf327c7bcca38ba64e0e5
 
 build:
-  number: 0
+  number: 1
 
 outputs:
   - name: evalml-core
@@ -87,7 +87,7 @@ outputs:
         - requirements.txt
         - core-requirements.txt
       commands:
-        - pytest evalml/tests -n 8
+        - pytest evalml/tests -n 8 --is-using-conda
 
 about:
   doc_url: https://evalml.featurelabs.com/
