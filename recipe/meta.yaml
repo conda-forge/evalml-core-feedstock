@@ -87,7 +87,7 @@ outputs:
         - requirements.txt
         - core-requirements.txt
       commands:
-        - pytest evalml/tests -n 8 --is-using-conda
+        - pytest evalml/tests -n 8
 
 about:
   doc_url: https://evalml.featurelabs.com/
