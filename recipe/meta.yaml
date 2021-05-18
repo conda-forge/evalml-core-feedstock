@@ -1,4 +1,4 @@
-{% set version = "0.24.0" %}
+{% set version = "0.24.1" %}
 
 package:
   name: evalml-core
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/e/evalml/evalml-{{ version }}.tar.gz
-  sha256: 67312e04a62463ea7897ea91b624ed1819c03d7c7bcbf327c7bcca38ba64e0e5
+  sha256: 2b2dc2d81b3504696fc80ee4824bec91aee49c53695467e75845910a92749ed2
 
 build:
   number: 0
@@ -87,7 +87,7 @@ outputs:
         - requirements.txt
         - core-requirements.txt
       commands:
-        - pytest evalml/tests -n 8
+        - pytest evalml/tests -n 8 --is-using-conda
 
 about:
   doc_url: https://evalml.featurelabs.com/
