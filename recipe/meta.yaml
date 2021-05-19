@@ -1,4 +1,4 @@
-{% set version = "0.23.0" %}
+{% set version = "0.24.1" %}
 
 package:
   name: evalml-core
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/e/evalml/evalml-{{ version }}.tar.gz
-  sha256: f63442e75e060a7cb373a3483ce2dfb2ec15b3c92623cf95d473111b4a002e5e
+  sha256: 2b2dc2d81b3504696fc80ee4824bec91aee49c53695467e75845910a92749ed2
 
 build:
-  number: 2
+  number: 0
 
 outputs:
   - name: evalml-core
@@ -67,7 +67,7 @@ outputs:
         - matplotlib-base >=3.3.3
         - seaborn >=0.11.0
         - ipywidgets >=7.5
-        - py-xgboost >=0.82
+        - py-xgboost >=0.82,<1.3.0
         - catboost >=0.20
         - lightgbm >=2.3.1
         - python >=3.7.*
