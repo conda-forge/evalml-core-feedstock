@@ -9,7 +9,7 @@ source:
   sha256: a667532cb2216b515d951d2b6362cfe9fbe949669999d88307982e726bfbb078
 
 build:
-  number: 0
+  number: 1
 
 outputs:
   - name: evalml-core
