@@ -54,7 +54,7 @@ outputs:
         - requirements.txt
         - core-requirements.txt
       commands:
-        - pytest evalml/tests -n 8 --has-minimal-dependencies --is-using-conda
+        - pytest evalml/tests -n 8 --has-minimal-dependencies
 
   - name: evalml
     build:
