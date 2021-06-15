@@ -54,7 +54,7 @@ outputs:
         - requirements.txt
         - core-requirements.txt
       commands:
-        - pytest evalml/tests -n 8 --has-minimal-dependencies
+        - pytest evalml/tests -n 8 --ignore evalml/tests/automl_tests/dask_tests/ --has-minimal-dependencies
 
   - name: evalml
     build:
@@ -87,7 +87,7 @@ outputs:
         - requirements.txt
         - core-requirements.txt
       commands:
-        - pytest evalml/tests -n 8 --is-using-conda
+        - pytest evalml/tests -n 8 --ignore evalml/tests/automl_tests/dask_tests/ --is-using-conda
 
 about:
   doc_url: https://evalml.featurelabs.com/
