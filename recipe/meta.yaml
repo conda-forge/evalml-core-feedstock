@@ -1,4 +1,4 @@
-{% set version = "0.25.0" %}
+{% set version = "0.27.0" %}
 
 package:
   name: evalml-core
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/e/evalml/evalml-{{ version }}.tar.gz
-  sha256: 2f4102b85590562f6dd63b25daec3c94f0dd2164b7216c9093a20fad69f6f915
+  sha256: fd6742185d8396dce5c7ffb449384fb4ded89602f294d09ef5f28b19acd73ffa
 
 build:
   number: 0
@@ -35,7 +35,7 @@ outputs:
         - requirements-parser >=0.2.0
         - shap >=0.35.0
         - texttable >=1.6.2
-        - woodwork ==0.3.1
+        - woodwork >=0.4.1
         - featuretools>=0.20.0
         - nlp-primitives>=1.1.0
         - python >=3.7.*
@@ -54,7 +54,7 @@ outputs:
         - requirements.txt
         - core-requirements.txt
       commands:
-        - pytest evalml/tests -n 8 --has-minimal-dependencies
+        - pytest evalml/tests -n 8 --ignore evalml/tests/automl_tests/dask_tests/ --has-minimal-dependencies
 
   - name: evalml
     build:
@@ -87,7 +87,7 @@ outputs:
         - requirements.txt
         - core-requirements.txt
       commands:
-        - pytest evalml/tests -n 8 --is-using-conda
+        - pytest evalml/tests -n 8 --ignore evalml/tests/automl_tests/dask_tests/ --is-using-conda
 
 about:
   doc_url: https://evalml.featurelabs.com/
@@ -106,3 +106,5 @@ extra:
     - angela97lin
     - bchen1116
     - chukarsten
+    - jeremyliweishih
+    - christopherbunn
