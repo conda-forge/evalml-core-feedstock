@@ -35,7 +35,7 @@ outputs:
         - requirements-parser >=0.2.0
         - shap >=0.35.0
         - texttable >=1.6.2
-        - woodwork ==0.3.1
+        - woodwork >=0.4.1
         - featuretools>=0.20.0
         - nlp-primitives>=1.1.0
         - python >=3.7.*
@@ -54,7 +54,7 @@ outputs:
         - requirements.txt
         - core-requirements.txt
       commands:
-        - pytest evalml/tests -n 8 --has-minimal-dependencies
+        - pytest evalml/tests -n 8 --ignore evalml/tests/automl_tests/dask_tests/ --has-minimal-dependencies
 
   - name: evalml
     build:
@@ -87,7 +87,7 @@ outputs:
         - requirements.txt
         - core-requirements.txt
       commands:
-        - pytest evalml/tests -n 8 --is-using-conda
+        - pytest evalml/tests -n 8 --ignore evalml/tests/automl_tests/dask_tests/ --is-using-conda
 
 about:
   doc_url: https://evalml.featurelabs.com/
