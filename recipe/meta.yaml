@@ -45,7 +45,7 @@ outputs:
       imports:
         - evalml
       requires:
-        - pytest >= 4.4.*
+        - pytest ==6.0.1
         - nbval ==0.9.3
         - python-graphviz >=0.8.4
         - category_encoders >=2.0.0
@@ -78,7 +78,7 @@ outputs:
       imports:
         - evalml
       requires:
-        - pytest ==4.4.1
+        - pytest ==6.0.1
         - nbval ==0.9.3
         - python-graphviz >=0.8.4
         - category_encoders >=2.0.0
