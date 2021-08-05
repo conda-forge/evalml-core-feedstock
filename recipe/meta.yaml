@@ -1,4 +1,4 @@
-{% set version = "0.29.0" %}
+{% set version = "0.30.0" %}
 
 package:
   name: evalml-core
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/e/evalml/evalml-{{ version }}.tar.gz
-  sha256: 846e85c3f72269860ea6a0c3f0f5213c9d6eda2d94920fd7972443ed85d2d365
+  sha256: b745ae3b0ca193333af6b05057311eeee4eca51069871781a2a8bfdfb0704d07
 
 build:
   number: 0
@@ -36,16 +36,16 @@ outputs:
         - shap >=0.36.0
         - texttable >=1.6.2
         - woodwork ==0.5.0
-        - featuretools>=0.21.0
+        - featuretools>=0.26.1
         - nlp-primitives>=1.1.0
         - python >=3.7.*
-        - networkx >=2.5
+        - networkx >=2.5,<2.6
         - pytest-xdist
     test:
       imports:
         - evalml
       requires:
-        - pytest >= 4.4.*
+        - pytest ==6.0.1
         - nbval ==0.9.3
         - python-graphviz >=0.8.4
         - category_encoders >=2.0.0
@@ -78,7 +78,7 @@ outputs:
       imports:
         - evalml
       requires:
-        - pytest ==4.4.1
+        - pytest ==6.0.1
         - nbval ==0.9.3
         - python-graphviz >=0.8.4
         - category_encoders >=2.0.0
