@@ -9,7 +9,7 @@ source:
   sha256: 7d0b74665fdd73256e2806d2ff9ba52f7b27474b27d613faff32d1a7f1008dd3
 
 build:
-  number: 0
+  number: 1
 
 outputs:
   - name: evalml-core
@@ -54,7 +54,7 @@ outputs:
         - requirements.txt
         - core-requirements.txt
       commands:
-        - pytest evalml/tests -n 8 --ignore evalml/tests/automl_tests/dask_tests/ --has-minimal-dependencies
+        - pytest evalml/tests -n 8 --ignore evalml/tests/automl_tests/parallel_tests/ --has-minimal-dependencies
 
   - name: evalml
     build:
@@ -87,7 +87,7 @@ outputs:
         - requirements.txt
         - core-requirements.txt
       commands:
-        - pytest evalml/tests -n 8 --ignore evalml/tests/automl_tests/dask_tests/ --is-using-conda
+        - pytest evalml/tests -n 8 --ignore evalml/tests/automl_tests/parallel_tests/ --is-using-conda
 
 about:
   doc_url: https://evalml.featurelabs.com/
