@@ -35,7 +35,7 @@ outputs:
         - requirements-parser >=0.2.0
         - shap >=0.36.0
         - texttable >=1.6.2
-        - woodwork ==0.6.0
+        - woodwork ==0.7.0
         - featuretools>=0.26.1
         - nlp-primitives>=1.1.0
         - python >=3.7.*
