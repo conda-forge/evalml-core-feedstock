@@ -1,4 +1,4 @@
-{% set version = "0.32.0" %}
+c{% set version = "0.32.0" %}
 
 package:
   name: evalml-core
@@ -9,7 +9,7 @@ source:
   sha256: b719fd2dd7b8531c30ca2ccd9491066f76239f8a396e0a5a941740d7681044f6
 
 build:
-  number: 0
+  number: 1
 
 outputs:
   - name: evalml-core
