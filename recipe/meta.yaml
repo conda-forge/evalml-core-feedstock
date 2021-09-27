@@ -9,7 +9,7 @@ source:
   sha256: acb758f2234a60dd606a4aa7dcde385e159c95a08470b0c5815d085db48aa985
 
 build:
-  number: 0
+  number: 1
 
 outputs:
   - name: evalml-core
@@ -67,7 +67,7 @@ outputs:
         - matplotlib-base >=3.3.3
         - seaborn >=0.11.0
         - ipywidgets >=7.5
-        - py-xgboost >=1.1.0,<1.3.0
+        - py-xgboost >=1.4.2
         - catboost >=0.20
         - lightgbm >=2.3.1
         - python >=3.7.*
