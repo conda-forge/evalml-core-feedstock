@@ -83,6 +83,7 @@ outputs:
         - nbval ==0.9.3
         - python-graphviz >=0.8.4
         - category_encoders >=2.0.0
+        - pytest-xdist
       source_files:
         - evalml/*
         - requirements.txt
