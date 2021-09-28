@@ -31,4 +31,4 @@ jobs:
           git clone -b latest_release_changes --single-branch https://github.com/conda-forge/evalml-core-feedstock
           virtualenv test_python -q
           source test_python/bin/activate
-          python .github/conda_version_check.py
+          python .github/check_versions.py
