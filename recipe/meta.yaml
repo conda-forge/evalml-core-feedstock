@@ -73,7 +73,7 @@ outputs:
         - python >=3.7.*
         - statsmodels >=0.12.2
         - imbalanced-learn >=0.8.0
-        - sktime ==0.7.1
+        - sktime ==0.7.0
     test:
       imports:
         - evalml
