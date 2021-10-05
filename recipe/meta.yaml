@@ -70,6 +70,7 @@ outputs:
         - catboost >=0.20
         - lightgbm >=2.3.1
         - python >=3.6.*
+        - vowpalwabbit >=8.11.0
     test:
       imports:
         - evalml
