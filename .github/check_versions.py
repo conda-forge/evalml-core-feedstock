@@ -8,10 +8,10 @@ import os
 @contextmanager
 def read_conda_yaml(path):
     with open(path, "rb") as config_file:
-        # Toss out the first few line that declares the version and uses version in YAML since its not supported YAML syntax
-        for _ in range(5):
-            next(config_file)
+        # Toss out the first line that declares the version since its not supported YAML syntax
+        next(config_file)
         yield yaml.safe_load(config_file)
+
 
 def standardize_format(packages):
     standardized_package_specifiers = []
