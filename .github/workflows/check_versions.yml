@@ -28,7 +28,7 @@ jobs:
           pip install requirements-parser>=0.2.0 PyYaml==5.4
       - name: Clone Feedstock & Check Versions
         run: |
-          git clone -b latest_release_changes --single-branch https://github.com/conda-forge/evalml-core-feedstock
+          git clone -b make-it-easier-to-fix-build-conda-pkg --single-branch https://github.com/alteryx/evalml
           virtualenv test_python -q
           source test_python/bin/activate
           python .github/check_versions.py
