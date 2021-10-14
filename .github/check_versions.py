@@ -55,8 +55,9 @@ def check_versions():
         not_in_master = "\n".join(not_in_master)
 
         raise SystemExit(
-            f"The following package versions are in master but different from latest_release_changes branch:\n {not_in_latest}\n"
-            f"The following package versions are in latest_release_changes but different from master branch:\n {not_in_master}\n"
+            f"The following package versions are in master but different from latest evalml recipe:\n {not_in_latest}\n"
+            f"The following package versions are in latest evalml recipe but different from master branch:\n {not_in_master}\n"
+            "Please make changes to the recipe so that they match if this is a version upgrade pr."
         )
 
 
