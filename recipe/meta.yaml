@@ -1,4 +1,4 @@
-{% set version = "0.36.0" %}
+{% set version = "0.37.0" %}
 
 package:
   name: evalml-core
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/e/evalml/evalml-{{ version }}.tar.gz
-  sha256: 0d6a73523e7e0145c36c4fec26ac52164d0f86bd8e1ebdbebbdf2e4e6aae7aac
+  sha256: d20d588c9aec8b709306e1f3d19ab132309eabd119b1630cec52332bf05edc91
 
 build:
   number: 0
@@ -36,6 +36,7 @@ outputs:
         - psutil >=5.6.6
         - requirements-parser >=0.2.0
         - shap >=0.36.0
+        - statsmodels >=0.12.2
         - texttable >=1.6.2
         - woodwork >=0.8.2
         - featuretools>=1.0.0
@@ -72,7 +73,6 @@ outputs:
         - catboost >=0.20
         - lightgbm >=2.3.1
         - python >=3.7.*
-        - statsmodels >=0.12.2
         - imbalanced-learn >=0.8.0
         - sktime >=0.7.0
         - lime>=0.2.0.1
