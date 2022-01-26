@@ -31,6 +31,7 @@ jobs:
           CURRENT_EVALML=$(grep 'version =' recipe/meta.yaml | cut -d'"' -f 2)
           git clone -b main --single-branch https://github.com/alteryx/evalml
           cd evalml
+          git fetch --tags
           git checkout tags/v$CURRENT_EVALML
           cd ..
           virtualenv test_python -q
