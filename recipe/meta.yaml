@@ -1,4 +1,4 @@
-{% set version = "0.43.0" %}
+{% set version = "0.44.0" %}
 
 package:
   name: evalml-core
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/e/evalml/evalml-{{ version }}.tar.gz
-  sha256: ba65d93960bf920bff6f8ab8ec790da2857ea05d02a040d06caab933f76e44c8
+  sha256: 0b1ab51d78355c207f7f78dcaf2de7408fbd621d3ac9d1144b3bab2528736442
 
 build:
   number: 0
@@ -20,7 +20,7 @@ outputs:
     script: build_script.sh
     requirements:
       host:
-        - python >=3.7,<3.10
+        - python >=3.8,<3.10
         - pip
       run:
         - numpy >=1.21.0
@@ -34,12 +34,12 @@ outputs:
         - cloudpickle >=1.5.0
         - click >=7.1.2
         - requirements-parser >=0.2.0
-        - shap >=0.36.0
+        - shap >=0.40.0
         - texttable >=1.6.2
-        - woodwork >=0.11.0
+        - woodwork >=0.12.0
         - featuretools>=1.2.0
         - nlp-primitives>=2.1.0
-        - python >=3.7.*
+        - python >=3.8.*
         - networkx >=2.5,<2.6
         - category_encoders >=2.2.2
         - python-graphviz >=0.13
@@ -70,7 +70,7 @@ outputs:
         - py-xgboost >=1.4.2
         - catboost >=0.20
         - lightgbm >=2.3.1
-        - python >=3.7.*
+        - python >=3.8.*
         - imbalanced-learn >=0.8.0
         - sktime >=0.7.0
         - lime>=0.2.0.1
