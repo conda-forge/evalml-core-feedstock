@@ -1,12 +1,12 @@
-{% set version = "0.44.0" %}
+{% set version = "0.45.0" %}
 
 package:
   name: evalml-core
-  version: '{{ version }}'
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/e/evalml/evalml-{{ version }}.tar.gz
-  sha256: 0b1ab51d78355c207f7f78dcaf2de7408fbd621d3ac9d1144b3bab2528736442
+  sha256: 44e1f48a70d3e9c4f28dcd7a69fd9144afa7ed582926c17ab7469e943ef0ee4c
 
 build:
   number: 0
@@ -61,7 +61,7 @@ outputs:
       noarch: python
     requirements:
       run:
-        - '{{ pin_subpackage("evalml-core", max_pin="x.x.x.x") }}'
+        - {{ pin_subpackage("evalml-core", max_pin="x.x.x.x") }}
         - plotly >=5.0.0
         - python-kaleido >=0.1.0
         - matplotlib-base >=3.3.3
