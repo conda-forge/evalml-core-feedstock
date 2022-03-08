@@ -122,11 +122,11 @@ Feedstock Maintainers
 =====================
 
 * [@ParthivNaresh](https://github.com/ParthivNaresh/)
-* [@angela97lin](https://github.com/angela97lin/)
 * [@bchen1116](https://github.com/bchen1116/)
 * [@christopherbunn](https://github.com/christopherbunn/)
 * [@chukarsten](https://github.com/chukarsten/)
 * [@dsherry](https://github.com/dsherry/)
+* [@eccabay](https://github.com/eccabay/)
 * [@freddyaboulton](https://github.com/freddyaboulton/)
 * [@jeremyliweishih](https://github.com/jeremyliweishih/)
 
