@@ -4,3 +4,6 @@ provider:
   linux_aarch64: default
   osx: default
   win: default
+github:
+  branch_name: main
+  tooling_branch_name: main
