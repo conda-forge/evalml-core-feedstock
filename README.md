@@ -5,7 +5,7 @@ Home: https://www.alteryx.com/innovation-labs
 
 Package license: BSD-3-Clause
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/evalml-core-feedstock/blob/master/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/evalml-core-feedstock/blob/main/LICENSE.txt)
 
 Summary: EvalML is an AutoML library that builds, optimizes, and evaluates machine learning pipelines using domain-specific objective functions.
 
@@ -19,8 +19,8 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=10464&branchName=master">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/evalml-core-feedstock?branchName=master">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=10464&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/evalml-core-feedstock?branchName=main">
       </a>
     </td>
   </tr>
@@ -122,11 +122,12 @@ Feedstock Maintainers
 =====================
 
 * [@ParthivNaresh](https://github.com/ParthivNaresh/)
-* [@angela97lin](https://github.com/angela97lin/)
 * [@bchen1116](https://github.com/bchen1116/)
 * [@christopherbunn](https://github.com/christopherbunn/)
 * [@chukarsten](https://github.com/chukarsten/)
 * [@dsherry](https://github.com/dsherry/)
+* [@eccabay](https://github.com/eccabay/)
+* [@fjlanasa](https://github.com/fjlanasa/)
 * [@freddyaboulton](https://github.com/freddyaboulton/)
 * [@jeremyliweishih](https://github.com/jeremyliweishih/)
 
