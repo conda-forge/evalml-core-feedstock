@@ -9,7 +9,7 @@ source:
   sha256: c134505a3f0f32d2c56d8ea62a44485027d15b888cb289faa6ad18547e00aa4c
 
 build:
-  number: 0
+  number: 1
 
 outputs:
   - name: evalml-core
@@ -43,7 +43,6 @@ outputs:
         - networkx >=2.5,<2.6
         - category_encoders >=2.2.2
         - python-graphviz >=0.13
-        - vowpalwabbit>=8.11.0
     test:
       imports:
         - evalml
@@ -75,6 +74,8 @@ outputs:
         - imbalanced-learn >=0.8.0
         - sktime >=0.7.0
         - lime>=0.2.0.1
+        - vowpalwabbit>=8.11.0
+
     test:
       imports:
         - evalml
