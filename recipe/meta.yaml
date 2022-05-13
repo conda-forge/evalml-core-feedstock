@@ -27,7 +27,7 @@ outputs:
         - pandas >=1.4.0
         - dask >=2021.10.0
         - scipy >=1.5.0
-        - scikit-learn >=0.24.0
+        - scikit-learn <1.1.0,>=0.24.0
         - scikit-optimize >=0.8.1
         - statsmodels >=0.12.2
         - colorama >=0.4.4
@@ -67,7 +67,7 @@ outputs:
         - matplotlib-base >=3.3.3
         - seaborn >=0.11.1
         - ipywidgets >=7.5
-        - py-xgboost >=1.4.2
+        - xgboost >=1.5.1
         - catboost >=0.20
         - lightgbm >=2.3.1
         - python >=3.8.*
@@ -75,6 +75,8 @@ outputs:
         - sktime >=0.7.0
         - lime>=0.2.0.1
         - vowpalwabbit>=8.11.0
+	      - pmdarima>=1.8.5
+	
 
     test:
       imports:
