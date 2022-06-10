@@ -1,4 +1,4 @@
-{% set version = "0.52.0" %}
+{% set version = "0.53.1" %}
 
 package:
   name: evalml-core
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/e/evalml/evalml-{{ version }}.tar.gz
-  sha256: 2a84804fcad1550f5fe674bda630fc7a6963f3e01528c2aab0e41277d3e15e7b
+  sha256: 0669ee4adcd91895f1b33722aee3b151e6ec455f186f1c01a6c2e46d322f2083
 
 build:
   number: 0
@@ -51,8 +51,7 @@ outputs:
         - nbval ==0.9.3
       source_files:
         - evalml/*
-        - requirements.txt
-        - core-requirements.txt
+        - setup.cfg
       commands:
         - pytest evalml/tests -n 8 --ignore evalml/tests/automl_tests/parallel_tests/ --has-minimal-dependencies
 
@@ -87,8 +86,7 @@ outputs:
         - pytest-xdist
       source_files:
         - evalml/*
-        - requirements.txt
-        - core-requirements.txt
+        - setup.cfg
       commands:
         - pytest evalml/tests -n 8 --ignore evalml/tests/automl_tests/parallel_tests/ --is-using-conda
 
