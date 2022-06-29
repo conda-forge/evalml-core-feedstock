@@ -9,7 +9,7 @@ source:
   sha256: 9deb7245707f9579cbd531920b2b65aa34f7a5d3e8064fdbcc34d3725a24d932
 
 build:
-  number: 0
+  number: 1
 
 outputs:
   - name: evalml-core
@@ -93,7 +93,7 @@ outputs:
 about:
   doc_url: https://evalml.featurelabs.com/
   dev_url: https://github.com/alteryx/evalml/
-  home: https://www.alteryx.com/innovation-labs
+  home: https://www.alteryx.com/open-source
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
@@ -110,3 +110,4 @@ extra:
     - christopherbunn
     - eccabay
     - fjlanasa
+    - MichaelFu512

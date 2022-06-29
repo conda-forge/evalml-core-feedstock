@@ -1,7 +1,7 @@
 About evalml-core
 =================
 
-Home: https://www.alteryx.com/innovation-labs
+Home: https://www.alteryx.com/open-source
 
 Package license: BSD-3-Clause
 
@@ -148,6 +148,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@MichaelFu512](https://github.com/MichaelFu512/)
 * [@ParthivNaresh](https://github.com/ParthivNaresh/)
 * [@bchen1116](https://github.com/bchen1116/)
 * [@christopherbunn](https://github.com/christopherbunn/)
@@ -155,6 +156,5 @@ Feedstock Maintainers
 * [@dsherry](https://github.com/dsherry/)
 * [@eccabay](https://github.com/eccabay/)
 * [@fjlanasa](https://github.com/fjlanasa/)
-* [@freddyaboulton](https://github.com/freddyaboulton/)
 * [@jeremyliweishih](https://github.com/jeremyliweishih/)
 
