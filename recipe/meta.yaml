@@ -2,7 +2,7 @@
 
 package:
   name: evalml-core
-  version: {{ version }}
+  version: '{{ version }}'
 
 source:
   url: https://pypi.io/packages/source/e/evalml/evalml-{{ version }}.tar.gz
@@ -102,6 +102,7 @@ about:
 extra:
   recipe-maintainers:
     - dsherry
+    - freddyaboulton
     - ParthivNaresh
     - bchen1116
     - chukarsten
