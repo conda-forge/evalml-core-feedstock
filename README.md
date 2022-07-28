@@ -156,5 +156,6 @@ Feedstock Maintainers
 * [@dsherry](https://github.com/dsherry/)
 * [@eccabay](https://github.com/eccabay/)
 * [@fjlanasa](https://github.com/fjlanasa/)
+* [@freddyaboulton](https://github.com/freddyaboulton/)
 * [@jeremyliweishih](https://github.com/jeremyliweishih/)
 
