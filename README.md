@@ -158,4 +158,5 @@ Feedstock Maintainers
 * [@fjlanasa](https://github.com/fjlanasa/)
 * [@freddyaboulton](https://github.com/freddyaboulton/)
 * [@jeremyliweishih](https://github.com/jeremyliweishih/)
+* [@machineAYX](https://github.com/machineAYX/)
 
