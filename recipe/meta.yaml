@@ -1,4 +1,4 @@
-{% set version = "0.55.0" %}
+{% set version = "0.56.0" %}
 
 package:
   name: evalml-core
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/e/evalml/evalml-{{ version }}.tar.gz
-  sha256: 82f3a04d1c9bc918f73fa67953943e16f8be37d52a858121cfb2dd0f4ee694b1
+  sha256: f3078cadc71d6aab70ee956414c2395dca8741e6ef9f1025ed865c4dc264421c
 
 build:
   number: 0
@@ -27,7 +27,7 @@ outputs:
         - pandas >=1.4.0
         - dask >=2021.10.0
         - scipy >=1.5.0
-        - scikit-learn >=1.1.1
+        - scikit-learn >=1.1.2
         - scikit-optimize >=0.9.0
         - statsmodels >=0.12.2
         - colorama >=0.4.4
@@ -71,7 +71,7 @@ outputs:
         - lightgbm >=2.3.1
         - python >=3.8.*
         - imbalanced-learn >=0.9.1
-        - sktime >=0.7.0
+        - sktime >=0.7.0,<0.13.1
         - lime>=0.2.0.1
         - vowpalwabbit>=8.11.0
         - pmdarima>=1.8.5
