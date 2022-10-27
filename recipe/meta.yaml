@@ -1,4 +1,4 @@
-{% set version = "0.59.0" %}
+{% set version = "0.60.0" %}
 
 package:
   name: evalml-core
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/e/evalml/evalml-{{ version }}.tar.gz
-  sha256: 4a4bd5988f813c691b86f3218fd6d59b5dade2b4f2e9525072c15aae09a68eaf
+  sha256: 062f4b01f36b4dc9888eb891fc7379c016eb2065a3b67ba4f2083cbac1c443ec
 
 build:
   number: 0
@@ -36,7 +36,7 @@ outputs:
         - requirements-parser >=0.2.0
         - shap >=0.40.0
         - texttable >=1.6.2
-        - woodwork>=0.18.0
+        - woodwork>=0.19.0
         - featuretools>=1.7.0
         - nlp-primitives>=2.1.0,!=2.6.0
         - python >=3.8.*
