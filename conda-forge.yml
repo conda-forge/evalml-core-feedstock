@@ -4,3 +4,5 @@ provider:
   linux_aarch64: default
   osx: default
   win: default
+conda_build:
+  pkg_format: '2'
