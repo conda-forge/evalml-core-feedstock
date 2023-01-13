@@ -1,4 +1,4 @@
-{% set version = "0.64.0" %}
+{% set version = "0.65.0" %}
 
 package:
   name: evalml-core
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/e/evalml/evalml-{{ version }}.tar.gz
-  sha256: 614e4f36de3bdbea6142686424d627e29c68339f1e6a8a26a08d45e493d7b402
+  sha256: 00bed91d6c8fd56682389b2828651c6cc3c160dbab418fafb9a30061dfd57d44
 build:
   number: 0
 
@@ -24,9 +24,9 @@ outputs:
       run:
         - numpy >=1.21.0
         - pandas >=1.5.0
-        - dask !=2022.10.1,>=2022.2.0 
+        - dask !=2022.10.1,>=2022.2.0
         - scipy >=1.5.0
-        - scikit-learn >=1.1.2
+        - scikit-learn >=1.1.2,<1.2.0
         - scikit-optimize >=0.9.0
         - statsmodels >=0.12.2
         - colorama >=0.4.4
@@ -35,7 +35,7 @@ outputs:
         - requirements-parser >=0.2.0
         - shap >=0.40.0
         - texttable >=1.6.2
-        - woodwork <=0.19.0
+        - woodwork >=0.21.1
         - featuretools>=1.16.0
         - nlp-primitives >=2.9.0
         - python >=3.8.*
