@@ -1,4 +1,4 @@
-{% set version = "0.65.0" %}
+{% set version = "0.66.0" %}
 
 package:
   name: evalml-core
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/e/evalml/evalml-{{ version }}.tar.gz
-  sha256: 00bed91d6c8fd56682389b2828651c6cc3c160dbab418fafb9a30061dfd57d44
+  sha256: 35d554f13a560379b3a0f90ba85fcb4ef8d783b8ff243869dff9fed81b88d476
 build:
   number: 0
 
@@ -40,8 +40,9 @@ outputs:
         - nlp-primitives >=2.9.0
         - python >=3.8.*
         - networkx >=2.5,<2.6
-        - category_encoders >=2.2.2
+        - category_encoders >=2.2.2, <=2.5.1.post0
         - python-graphviz >=0.13
+        - tomli >=2.0.1
     test:
       imports:
         - evalml
