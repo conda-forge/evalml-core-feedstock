@@ -35,8 +35,8 @@ def get_evalml_conda_requirements(conda_recipe):
     for dep in all_reqs:
         if "python >=" in dep:
             continue
-        packages.append(Requirement(dep))
-    return standardize_format(packages, IGNORE_PACKAGES, convert_to_conda=True)
+        packages.append(dep)
+    return standardize_format(requirements.parse("\n".join(packages)))
 
 
 def check_versions():
