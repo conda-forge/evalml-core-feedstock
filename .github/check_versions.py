@@ -27,12 +27,16 @@ def standardize_format(packages):
 
 def get_evalml_conda_requirements(conda_recipe):
     with read_conda_yaml(conda_recipe) as recipe:
-        core_reqs = recipe['outputs'][0]['requirements']['run']
-        extra_reqs = recipe['outputs'][1]['requirements']['run']
-        extra_reqs = [
-            package for package in extra_reqs if "evalml-core" not in package]
+        core_reqs = recipe["outputs"][0]["requirements"]["run"]
+        extra_reqs = recipe["outputs"][1]["requirements"]["run"]
+        extra_reqs = [package for package in extra_reqs if "evalml-core" not in package]
         all_reqs = core_reqs + extra_reqs
-    return standardize_format(requirements.parse("\n".join(all_reqs)))
+    packages = []
+    for dep in all_reqs:
+        if "python >=" in dep:
+            continue
+        packages.append(dep)
+    return standardize_format(requirements.parse("\n".join(packages)))
 
 
 def check_versions():
