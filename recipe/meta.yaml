@@ -93,7 +93,10 @@ outputs:
         - evalml/*
         - setup.cfg
       commands:
-        - pytest evalml/tests -n 8 --ignore evalml/tests/automl_tests/parallel_tests/ --is-using-conda
+        - pwd
+        - ls
+        - export SRC_DIR=`pwd`
+        - SRC_DIR=`pwd` pytest evalml/tests -n 8 --ignore evalml/tests/automl_tests/parallel_tests/ --is-using-conda
 
 about:
   doc_url: https://evalml.featurelabs.com/
