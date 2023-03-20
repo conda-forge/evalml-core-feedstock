@@ -53,12 +53,9 @@ outputs:
         - nbval ==0.9.3
       source_files:
         - evalml/*
-        - setup.cfg
+        - pyproject.toml
       commands:
-        - pwd
-        - ls
-        - export SRC_DIR=`pwd`
-        - SRC_DIR=`pwd` pytest evalml/tests -n 8 --ignore evalml/tests/automl_tests/parallel_tests/ --has-minimal-dependencies
+        - pytest evalml/tests -n 8 --ignore evalml/tests/automl_tests/parallel_tests/ --has-minimal-dependencies
 
   - name: evalml
     build:
@@ -91,12 +88,9 @@ outputs:
         - pytest-xdist
       source_files:
         - evalml/*
-        - setup.cfg
+        - pyproject.toml
       commands:
-        - pwd
-        - ls
-        - export SRC_DIR=`pwd`
-        - SRC_DIR=`pwd` pytest evalml/tests -n 8 --ignore evalml/tests/automl_tests/parallel_tests/ --is-using-conda
+        - pytest evalml/tests -n 8 --ignore evalml/tests/automl_tests/parallel_tests/ --is-using-conda
 
 about:
   doc_url: https://evalml.featurelabs.com/
