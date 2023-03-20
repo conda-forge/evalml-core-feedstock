@@ -1,4 +1,4 @@
-{% set version = "0.70.0" %}
+{% set version = "0.71.0" %}
 
 package:
   name: evalml-core
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/e/evalml/evalml-{{ version }}.tar.gz
-  sha256: 725297b73284b9fb29aa0c9757f0ffe28be9e14dd7549ccfd3cc96c6c1b59121
+  sha256: 74f4b5da336451576b164b87a3e8413f21b180306592754bd6a0ea5a0ddd69dd
 build:
   number: 0
 
@@ -53,12 +53,9 @@ outputs:
         - nbval ==0.9.3
       source_files:
         - evalml/*
-        - setup.cfg
+        - pyproject.toml
       commands:
-        - pwd
-        - ls
-        - export SRC_DIR=`pwd`
-        - SRC_DIR=`pwd` pytest evalml/tests -n 8 --ignore evalml/tests/automl_tests/parallel_tests/ --has-minimal-dependencies
+        - pytest evalml/tests -n 8 --ignore evalml/tests/automl_tests/parallel_tests/ --has-minimal-dependencies
 
   - name: evalml
     build:
@@ -91,12 +88,9 @@ outputs:
         - pytest-xdist
       source_files:
         - evalml/*
-        - setup.cfg
+        - pyproject.toml
       commands:
-        - pwd
-        - ls
-        - export SRC_DIR=`pwd`
-        - SRC_DIR=`pwd` pytest evalml/tests -n 8 --ignore evalml/tests/automl_tests/parallel_tests/ --is-using-conda
+        - pytest evalml/tests -n 8 --ignore evalml/tests/automl_tests/parallel_tests/ --is-using-conda
 
 about:
   doc_url: https://evalml.featurelabs.com/
