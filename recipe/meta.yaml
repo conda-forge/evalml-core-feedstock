@@ -73,7 +73,7 @@ outputs:
         - lightgbm >=2.3.1
         - python >=3.8.*
         - imbalanced-learn >=0.9.1
-        - sktime >=0.15.0
+        - sktime ==0.17.0
         - lime>=0.2.0.1
         - vowpalwabbit>=8.11.0
         - pmdarima>=1.8.5
