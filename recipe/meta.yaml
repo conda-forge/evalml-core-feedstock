@@ -1,4 +1,4 @@
-{% set version = "0.72.0" %}
+{% set version = "0.73.0" %}
 
 package:
   name: evalml-core
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/e/evalml/evalml-{{ version }}.tar.gz
-  sha256: 3d4ddea3c00f1f76257469f74c2b49378b7a4c33d802aa00fe7736b8b7b1a783
+  sha256: 0bb4636461918bda92c9e2f24183a20531341b57e1ad6cdda8471d980b5cbcde
 build:
   number: 0
 
@@ -73,7 +73,7 @@ outputs:
         - lightgbm >=2.3.1
         - python >=3.8.*
         - imbalanced-learn >=0.9.1
-        - sktime >=0.15.0
+        - sktime ==0.17.0
         - lime>=0.2.0.1
         - vowpalwabbit>=8.11.0
         - pmdarima>=1.8.5
