@@ -1,4 +1,4 @@
-{% set version = "0.73.0" %}
+{% set version = "0.74.0" %}
 
 package:
   name: evalml-core
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/e/evalml/evalml-{{ version }}.tar.gz
-  sha256: 0bb4636461918bda92c9e2f24183a20531341b57e1ad6cdda8471d980b5cbcde
+  sha256: 29beb201934a0faff129c40ea6c5a92193d7d07f0a0d2dd0c0f7862871c842ed
 build:
   number: 0
 
