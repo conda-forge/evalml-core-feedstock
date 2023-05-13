@@ -1,4 +1,4 @@
-{% set version = "0.74.0" %}
+{% set version = "0.76.0" %}
 
 package:
   name: evalml-core
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/e/evalml/evalml-{{ version }}.tar.gz
-  sha256: 29beb201934a0faff129c40ea6c5a92193d7d07f0a0d2dd0c0f7862871c842ed
+  sha256: 034796aa662d7ee5f4e530aa5b0b86248a35fd943979694688172d062e25f2a6
 build:
   number: 0
 
@@ -22,7 +22,7 @@ outputs:
         - python >=3.8,<3.10
         - pip
       run:
-        - numpy >=1.21.0
+        - numpy <=1.23.5,>=1.21.0
         - pandas >=1.5.0
         - dask >=2022.2.0,!=2022.10.1
         - scipy >=1.5.0
@@ -45,6 +45,7 @@ outputs:
         - black[jupyter] >=22.3.0
         - packaging >=23.0
         - holidays<0.21,>=0.13
+        - distributed>=2022.2.0,!=2022.10.1
     test:
       imports:
         - evalml
