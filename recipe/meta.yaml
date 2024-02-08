@@ -1,4 +1,4 @@
-{% set version = "0.82.0" %}
+{% set version = "0.83.0" %}
 
 package:
   name: evalml-core
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/e/evalml/evalml-{{ version }}.tar.gz
-  sha256: f1fdcd55591db2c71f36fd19564b4716d29dfa438bb5185f08af679d3a4147e3
+  sha256: 685d31bec7efb4dccd618a44c9d0ec2e5cf1fc14d1c6f65a95e826fc938daf26
 build:
   number: 0
 
@@ -23,9 +23,9 @@ outputs:
         - pip
       run:
         - numpy >=1.22.0
-        - pandas >=1.5.0, < 2.1.0
+        - pandas >=1.5.0, <2.1.0
         - dask >=2022.2.0, !=2022.10.1
-        - scipy >=1.5.0
+        - scipy >=1.5.0, <1.12.0
         - scikit-learn >=1.3.0
         - scikit-optimize >=0.9.0
         - statsmodels >=0.12.2
@@ -34,11 +34,11 @@ outputs:
         - click>=8.0.0
         - shap >=0.42.0
         - texttable >=1.6.2
-        - woodwork >=0.22.0
-        - featuretools>=1.16.0
+        - woodwork >=0.24.0
+        - featuretools>=1.28.0
         - nlp-primitives>=2.9.0
         - python >=3.8.*
-        - networkx >=2.6
+        - networkx >=2.6, <3.2
         - category_encoders >=2.2.2, <=2.5.1.post0
         - python-graphviz >=0.13
         - tomli >=2.0.1
@@ -65,11 +65,11 @@ outputs:
       run:
         - '{{ pin_subpackage("evalml-core", max_pin="x.x.x.x") }}'
         - plotly >=5.0.0
-        - python-kaleido >=0.1.0
+        - python-kaleido ==0.1.0
         - matplotlib-base >=3.3.3
         - seaborn >=0.11.1
         - ipywidgets >=7.5
-        - xgboost >=1.7.0
+        - xgboost >=1.7.0.post0
         - catboost >=1.1.1
         - lightgbm >=4.0.0
         - lime >=0.2.0.1
@@ -111,6 +111,5 @@ extra:
     - jeremyliweishih
     - christopherbunn
     - eccabay
-    - fjlanasa
     - MichaelFu512
     - ivanayx
