@@ -34,7 +34,7 @@ outputs:
         - click>=8.0.0
         - shap >=0.42.0
         - texttable >=1.6.2
-        - woodwork >=0.24.0, <0.28.0
+        - woodwork >=0.24.0
         - featuretools>=1.28.0
         - nlp-primitives>=2.9.0
         - python >=3.8.*
