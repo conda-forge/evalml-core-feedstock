@@ -1,4 +1,4 @@
-{% set version = "0.82.0" %}
+{% set version = "0.84.0" %}
 
 package:
   name: evalml-core
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/e/evalml/evalml-{{ version }}.tar.gz
-  sha256: f1fdcd55591db2c71f36fd19564b4716d29dfa438bb5185f08af679d3a4147e3
+  sha256: c1c0c547676a4ae01c9134eaca45a056c4bd4deba34fab80bab3a6f5e1b52260
 build:
   number: 0
 
@@ -19,38 +19,38 @@ outputs:
     script: build_script.sh
     requirements:
       host:
-        - python >=3.8,<3.10
+        - python >=3.9, <=3.11
         - pip
       run:
         - numpy >=1.22.0
-        - pandas >=1.5.0, < 2.1.0
+        - pandas >=1.5.0, <2.1.0
         - dask >=2022.2.0, !=2022.10.1
         - scipy >=1.5.0
-        - scikit-learn >=1.3.0
+        - scikit-learn >=1.3.2
         - scikit-optimize >=0.9.0
         - statsmodels >=0.12.2
         - colorama >=0.4.4
         - cloudpickle >=1.5.0
-        - click>=8.0.0
-        - shap >=0.42.0
+        - click >=8.0.0
+        - shap >=0.45.0
         - texttable >=1.6.2
         - woodwork >=0.22.0
-        - featuretools>=1.16.0
+        - featuretools >=1.16.0
         - nlp-primitives>=2.9.0
-        - python >=3.8.*
-        - networkx >=2.6
+        - python >=3.9.*
+        - networkx >=2.7
         - category_encoders >=2.2.2, <=2.5.1.post0
         - python-graphviz >=0.13
         - tomli >=2.0.1
         - packaging >=23.0
         - black[jupyter] >=22.3.0
-        - holidays <0.21, >=0.13
+        - holidays >=0.13
         - distributed >=2022.2.0, !=2022.10.1
     test:
       imports:
         - evalml
       requires:
-        - pytest ==7.1.2
+        - pytest >=6.2.5
         - nbval ==0.9.3
       source_files:
         - evalml/*
@@ -65,25 +65,24 @@ outputs:
       run:
         - '{{ pin_subpackage("evalml-core", max_pin="x.x.x.x") }}'
         - plotly >=5.0.0
-        - python-kaleido >=0.1.0
+        - python-kaleido >=0.2.0
         - matplotlib-base >=3.3.3
         - seaborn >=0.11.1
         - ipywidgets >=7.5
-        - xgboost >=1.7.0
+        - xgboost >=1.7.0.post0
         - catboost >=1.1.1
         - lightgbm >=4.0.0
         - lime >=0.2.0.1
-        - python >=3.8.*
+        - python >=3.9.*, <=3.11
         - imbalanced-learn >=0.11.0
-        - sktime >=0.21.0
+        - sktime >=0.21.0, <0.29.0
         - pmdarima >=1.8.5
-        - vowpalwabbit >=8.11.0
     test:
       imports:
         - evalml
       requires:
-        - pytest ==7.1.2
-        - nbval ==0.9.3
+        - pytest >=7.1.2
+        - nbval >=0.9.3
         - python-graphviz >=0.8.4
         - category_encoders >=2.2.2, <=2.5.1.post0
         - pytest-xdist
@@ -111,6 +110,5 @@ extra:
     - jeremyliweishih
     - christopherbunn
     - eccabay
-    - fjlanasa
     - MichaelFu512
     - ivanayx
