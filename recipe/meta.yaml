@@ -5,10 +5,10 @@ package:
   version: '{{ version }}'
 
 source:
-  url: https://pypi.io/packages/source/e/evalml/evalml-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/e/evalml/evalml-{{ version }}.tar.gz
   sha256: c1c0c547676a4ae01c9134eaca45a056c4bd4deba34fab80bab3a6f5e1b52260
 build:
-  number: 0
+  number: 1
 
 outputs:
   - name: evalml-core
@@ -19,7 +19,7 @@ outputs:
     script: build_script.sh
     requirements:
       host:
-        - python >=3.9, <=3.11
+        - python {{ python_min }}
         - pip
       run:
         - numpy >=1.22.0
@@ -37,7 +37,7 @@ outputs:
         - woodwork >=0.22.0
         - featuretools >=1.16.0
         - nlp-primitives>=2.9.0
-        - python >=3.9.*
+        - python >={{ python_min }}
         - networkx >=2.7
         - category_encoders >=2.2.2, <=2.5.1.post0
         - python-graphviz >=0.13
@@ -52,6 +52,7 @@ outputs:
       requires:
         - pytest >=6.2.5
         - nbval ==0.9.3
+        - python {{ python_min }}
       source_files:
         - evalml/*
         - pyproject.toml
@@ -73,7 +74,7 @@ outputs:
         - catboost >=1.1.1
         - lightgbm >=4.0.0
         - lime >=0.2.0.1
-        - python >=3.9.*, <=3.11
+        - python >={{ python_min }},<3.12a0
         - imbalanced-learn >=0.11.0
         - sktime >=0.21.0, <0.29.0
         - pmdarima >=1.8.5
@@ -86,6 +87,7 @@ outputs:
         - python-graphviz >=0.8.4
         - category_encoders >=2.2.2, <=2.5.1.post0
         - pytest-xdist
+        - python {{ python_min }}
       source_files:
         - evalml/*
         - pyproject.toml
