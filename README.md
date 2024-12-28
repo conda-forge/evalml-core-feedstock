@@ -154,7 +154,6 @@ Feedstock Maintainers
 * [@christopherbunn](https://github.com/christopherbunn/)
 * [@chukarsten](https://github.com/chukarsten/)
 * [@eccabay](https://github.com/eccabay/)
-* [@fjlanasa](https://github.com/fjlanasa/)
 * [@ivanayx](https://github.com/ivanayx/)
 * [@jeremyliweishih](https://github.com/jeremyliweishih/)
 * [@machineAYX](https://github.com/machineAYX/)
